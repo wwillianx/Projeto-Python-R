@@ -4,7 +4,7 @@ import time
 
 def predict_sales():
     start = time.time()
-    df = pd.read_csv('data/clean_vgsales.csv')
+    df = pd.read_csv('dados/clean_vgsales.csv')
 
     X = df[['Year']]
     y = df['Global_Sales']

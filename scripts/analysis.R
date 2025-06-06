@@ -1,7 +1,7 @@
 library(ggplot2)
 library(dplyr)
 
-df <- read.csv("data/clean_vgsales.csv")
+df <- read.csv("dados/clean_vgsales.csv")
 
 # Vendas por Ano
 sales_by_year <- df %>%
