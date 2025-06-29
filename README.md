@@ -1,6 +1,22 @@
 Para configurar o ambiente rode o arquivo: setup_project.py
+
  
+ Configuracao do MongoDB
+
+ Para MongoDB local:
+export MONGO_URI="mongodb://localhost:27017"
+
+Para MongoDB Atlas (nuvem):
+Copie a string no painel do Atlas e defina assim:
+export MONGO_URI="mongodb+srv://<usuario>:<senha>@<cluster>.mongodb.net/?retryWrites=true&w=majority"
+Substitua <usuario>, <senha> e <cluster> pelos seus dados reais.
+
+Coloque um dos comandos no terminal
+
+
  
+Ao final rode: python3 main.py no terminal
+
  
  1. Introdução
 Nome do Projeto: Sistema de Análise e Previsão de Vendas de Video Games
