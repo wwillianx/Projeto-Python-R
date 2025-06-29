@@ -4,11 +4,7 @@
 #3- Dado preparado para analise
 #4- Iniciar as analises
 
-
 # Resolução do TO DO
-
-#pip3 install rpy2
-#pip3 install pandas
 
 import pandas as pd
 # 1- Ler o arquivo CSV com pandas
@@ -50,7 +46,7 @@ print(df_vgsales.groupby('Genre')['Global_Sales'].sum().sort_values(ascending=Fa
 
 # Continuação com R (opcional, conforme o exemplo do código)
 # Se você quiser continuar a análise com R:
-from rpy2.robjects import pandas2ri, globalenv, r
+from rpy2.robjects import pandas2ri
 from rpy2.robjects.packages import importr
 pandas2ri.activate()
 base = importr('base')
