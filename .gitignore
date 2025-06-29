@@ -4,6 +4,9 @@
 # Ignorar PNGs
 *.png
 
-# Outros arquivos que quiser ignorar
+# Outros
 node_modules/
 .DS_Store
+
+#Conexão Mongo
+.env
