@@ -1,0 +1,9 @@
+# Ignorar PDFs
+*.pdf
+
+# Ignorar PNGs
+*.png
+
+# Outros arquivos que quiser ignorar
+node_modules/
+.DS_Store
