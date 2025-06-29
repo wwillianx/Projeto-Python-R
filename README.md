@@ -1,3 +1,7 @@
+Para configurar o ambiente rode o arquivo: setup_project.py
+ 
+ 
+ 
  1. Introdução
 Nome do Projeto: Sistema de Análise e Previsão de Vendas de Video Games
 Versão do Documento: 1.3
