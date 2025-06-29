@@ -12,17 +12,6 @@ Este projeto visa realizar uma análise exploratória abrangente, prever vendas 
 
 ---
 
-## 🌟 Visão Geral do Sistema
-
-O sistema foi concebido para oferecer insights valiosos sobre o mercado de videogames, abrangendo desde a importação e limpeza de dados até a geração de previsões de vendas e comparações de jogos.
-
-**Público-alvo (Stakeholders):**
-* Professor da disciplina DLPD II
-* Alunos do grupo de projeto
-* Futuramente, profissionais interessados em análise de dados em vendas
-
----
-
 ## 🛠️ Configuração do Ambiente
 
 Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
@@ -31,8 +20,8 @@ Siga os passos abaixo para configurar e executar o projeto em seu ambiente local
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL_DO_SEU_REPOSITORIO>
-    cd sistema-analise-vendas-games # Ou o nome da sua pasta de projeto
+    git clone https://github.com/wwillianx/Projeto-Python-R.git
+    cd Projeto-Python-R
     ```
 2.  **Crie e ative um ambiente virtual (recomendado):**
     ```bash
@@ -43,16 +32,18 @@ Siga os passos abaixo para configurar e executar o projeto em seu ambiente local
     source venv/bin/activate
     ```
 3.  **Instale as dependências Python:**
+    **Execute o seguinte comando para instalar todas as bibliotecas Python necessárias:**
     ```bash
     pip install -r requirements.txt
     ```
-    **(Crie um `requirements.txt` se ainda não tiver, com `pip freeze > requirements.txt`)**
+    Isso garantirá que todas as dependências do projeto sejam instaladas automaticamente.
 
 4.  **Instale as dependências R:**
-    Abra um terminal R (ou o console R no VS Code) e instale os pacotes necessários:
-    ```R
-    install.packages(c("ggplot2", "dplyr", "reticulate"))
+    **Para instalar os pacotes R necessários, execute o seguinte script R:**
+    ```bash
+    Rscript r_requirements.r
     ```
+    Este script verificará e instalará automaticamente os pacotes `ggplot2` e `dplyr`.
 
 ### 2. Configuração do MongoDB (Crucial para persistência de gráficos)
 
@@ -72,7 +63,7 @@ O sistema pode opcionalmente salvar e recuperar gráficos do MongoDB. Para isso,
         ```dotenv
         MONGO_URI="mongodb+srv://<usuario>:<senha>@<cluster>.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
         ```
-        **Lembre-se de substituir `<usuario>`, `<senha>` e `<cluster>` pelos seus dados reais.**
+        **Lembre-se de substituir `<usuario>`, `<senha>` e `<cluster>` pelos seus seus dados reais.**
 
     **Importante:** O arquivo `.env` é ignorado pelo Git (graças ao `.gitignore`), garantindo que suas credenciais não sejam publicadas acidentalmente.
 
