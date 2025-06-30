@@ -1,0 +1,13 @@
+# Ignorar PDFs
+*.pdf
+
+# Ignorar PNGs
+*.png
+
+# Outros
+node_modules/
+.DS_Store
+__pycache__
+
+#Conexão Mongo
+.env
